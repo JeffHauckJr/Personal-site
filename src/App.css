@@ -1,5 +1,11 @@
+* {
+  margin: 0%;
+  padding: 0%;
+}
 .App {
   text-align: center;
+  height: 100%;
+  width: 100%;
 }
 
 .App-logo {
@@ -35,4 +41,31 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.footer img {
+  text-align: center;
+  width: 35px;
+  height: 35px;
+  display: inline-block;
+  border: solid;
+  border-radius: 50%;
+  margin-right: 50px;
+  background-color: transparent;
+  color: transparent;
+  margin-left: 20px;
+}
+.footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+}
+.social:link {
+  background-color: transparent;
 }

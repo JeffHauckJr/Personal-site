@@ -1,29 +1,24 @@
 import { AppBar, Toolbar } from "@material-ui/core";
 import { Link } from "react-router-dom";
 import {
-	ACTIVITIES_ROUTE,
 	HOME_ROUTE,
-	MY_ROUTINES_ROUTE,
-	ROUTINES_ROUTE,
-	SIGNIN,
-	REGISTER,
+	ABOUT_ROUTE,
+    PORTFOLIO_ROUTE,
+    CONTACT_ROUTE
 } from "../constants";
 
 const Navigation = () => {
 		return (
 			<>
-			<AppBar >
+			<AppBar style={{background: '#074253'}}>
 				<Toolbar>
-					<Link to={HOME_ROUTE} style={{textDecoration: "none", marginRight: '50px', fontSize: '25px', color: 'white'}}>Home</Link>
-					<Link to={ROUTINES_ROUTE} style={{textDecoration: "none", marginRight: '50px', fontSize: '25px', color: 'white'}}>Routines</Link>
-					<Link to={ACTIVITIES_ROUTE} style={{textDecoration: "none", marginRight: '50px', fontSize: '25px', color: 'white'}}>Activities</Link>
-					<Link to={SIGNIN} style={{textDecoration: "none", marginLeft: '65%', fontSize: '25px', color: 'white'}}>Sign In</Link>
-					<Link to={REGISTER} style={{textDecoration: "none", fontSize: '25px', marginLeft: '50px', color: 'white'}}>Register</Link>
+					<Link to={HOME_ROUTE} style={{textDecoration: "none", marginRight: '50px', fontSize: '25px', color: 'beige', fontFamily: 'Lato' }}>Home</Link>
+					<Link to={ABOUT_ROUTE} style={{textDecoration: "none", marginRight: '50px', fontSize: '25px', color: 'beige',  fontFamily: 'Lato'}}>About</Link>
+					<Link to={PORTFOLIO_ROUTE} style={{textDecoration: "none", marginRight: '50px', fontSize: '25px', color: 'beige',  fontFamily: 'Lato'}}>Portfolio</Link>
+					<Link to={CONTACT_ROUTE} style={{textDecoration: "none", marginLeft: '65%', fontSize: '25px', color: 'beige',  fontFamily: 'Lato'}}>Contact</Link>
 				</Toolbar>
 			</AppBar>
 			</>
-		)
-	
+		)	
 };
-
 export default Navigation;

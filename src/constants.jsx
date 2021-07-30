@@ -1,6 +1,4 @@
 export const HOME_ROUTE = "/home";
-export const ROUTINES_ROUTE = "/routines";
-export const MY_ROUTINES_ROUTE = "/my-routines";
-export const ACTIVITIES_ROUTE = "/activities";
-export const SIGNIN = "/sign-in"
-export const REGISTER = "/register"
+export const ABOUT_ROUTE = "/about";
+export const PORTFOLIO_ROUTE = "/portfolio";
+export const CONTACT_ROUTE = "/contact";
