@@ -26,6 +26,7 @@ const Socials = () => {
                     onClick={() => {
                         window.open("https://www.linkedin.com/in/jefferyhauckjr/")
                     }}
+                    
                   />
             </div>
         </>
