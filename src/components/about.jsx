@@ -26,6 +26,8 @@ const AboutInfo = () => {
         alt=""
         style={{ width: "300px", marginTop: "10%" }}
       ></img>
+      <p>Tel: <b>1-602-516-9519</b></p>
+      <p>Email: <b>jefferyhauckjr@gmail.com</b></p>
       <div className="header-container">
         <h1 className="about-header">
           “Try not to become a man of success, but rather become a man of

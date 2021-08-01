@@ -12,8 +12,23 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-width: 3px;
+    border-style: solid;
+    border-image: 
+    linear-gradient(
+      to bottom, 
+      lightblue, 
+      rgba(0, 0, 0, 0)
+    ) 1 100%;
 }
 
 .img2 {
+    margin-right: 5%;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
+
+a:hover { text-decoration: none; color:lightblue; }
+a:focus { text-decoration: none; color:beige; }
+a:active { text-decoration: none; color:beige; }

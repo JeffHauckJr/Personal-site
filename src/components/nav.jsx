@@ -15,7 +15,7 @@ const Navigation = () => {
 					<Link to={HOME_ROUTE} style={{textDecoration: "none", marginRight: '50px', fontSize: '25px', color: 'beige', fontFamily: 'Lato' }}>Home</Link>
 					<Link to={ABOUT_ROUTE} style={{textDecoration: "none", marginRight: '50px', fontSize: '25px', color: 'beige',  fontFamily: 'Lato'}}>About</Link>
 					<Link to={PORTFOLIO_ROUTE} style={{textDecoration: "none", marginRight: '50px', fontSize: '25px', color: 'beige',  fontFamily: 'Lato'}}>Portfolio</Link>
-					<Link to={CONTACT_ROUTE} style={{textDecoration: "none", marginLeft: '65%', fontSize: '25px', color: 'beige',  fontFamily: 'Lato'}}>Contact</Link>
+					<h1 style={{textDecoration: "none", marginLeft: '65%', fontSize: '25px', color: 'beige',  fontFamily: 'Lato'}}>Jeffery Hauck</h1>
 				</Toolbar>
 			</AppBar>
 			</>
