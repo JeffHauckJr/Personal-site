@@ -1,0 +1,19 @@
+.portfolio-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.article-container {
+    justify-content: center;
+    align-items: center;
+}
+
+.article-text-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.img2 {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
