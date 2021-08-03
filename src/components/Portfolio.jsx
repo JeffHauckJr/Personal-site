@@ -127,7 +127,8 @@ const PortfolioInfo = () => {
             >
               <h1 style={{fontFamily: 'Lato', color: 'beige', fontSize: '45px', paddingBottom: '15px'}}>Harvard Art Museum</h1>
               <p style={{ fontSize: "20px", color: 'beige'}}>
-               
+               The Harvard Art collecter is a FullStack application that implements React.js for front-end duties and Harvard's Art API to gain access
+               to their database. This allows you to filter through their database with keywords to find what you are looking for. 
               </p>
               <p style={{ fontSize: "20px", paddingTop: '20px'}}>
                 GitHub Repo:
