@@ -8,7 +8,7 @@ const PortfolioInfo = () => {
   return (
     <>
       <div>
-        <h1 style={{color: 'beige', fontSize: '50px'}}>Projects</h1>
+        <h1 style={{color: 'beige', fontSize: '50px '}}>Projects</h1>
       </div>
       <div className="portfolio-container">
         <div>
@@ -102,8 +102,7 @@ const PortfolioInfo = () => {
                 through leaving the site and reloading saving to local storage. 
               </p>
               <p style={{ fontSize: "20px", paddingTop: '20px'}}>
-                GitHub Repo:
-                https://github.com/winfreychristopher/great-linkerator
+                {/* GitHub Repo: */}
               </p>
             </div>
           </article>
@@ -128,16 +127,11 @@ const PortfolioInfo = () => {
             >
               <h1 style={{fontFamily: 'Lato', color: 'beige', fontSize: '45px', paddingBottom: '15px'}}>Harvard Art Museum</h1>
               <p style={{ fontSize: "20px", color: 'beige'}}>
-                This project is a FullStack application which allows users to
-                create a post with a Link attached. This Link will have data on
-                how popular this link may be. This FullStack application was a
-                group project that spanned two weeks. We were able to impliment
-                React for the Front- end and Express servers paired with Node.js
-                to connect to our SQL server.
+               
               </p>
               <p style={{ fontSize: "20px", paddingTop: '20px'}}>
                 GitHub Repo:
-                https://github.com/winfreychristopher/great-linkerator
+                <a style={{paddingLeft: '15px', textDecoration: 'none'}} href='https://github.com/JeffHauckJr/UNIV_Art_Collector_React_Starter' target="blank">Here</a>
               </p>
             </div>
           </article>
