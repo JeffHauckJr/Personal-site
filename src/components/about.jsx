@@ -34,42 +34,7 @@ const AboutInfo = () => {
           value.” – Albert Einstein.
         </h1>
       </div>
-      <div className="about-container">
-        <div className="about-info-container">
-          <img 
-            className="img1"
-            src={superDome}
-            alt=""
-            style={{ height: "500px", width: "400px" }}
-          ></img>
-          <div
-            className="about-info-text"
-            style={{
-              width: "600px",
-              height: "500px",
-              border: "black, solid, 1px",
-            }}
-          >
-            <h1 style={{ color: "beige" }}>About Jeff Hauck</h1>
-            <p className="p1">{aboutInfo}</p>
-          </div>
-        </div>
-        <div className="pro-info-container" style={{ marginTop: "10%" }}>
-          <img
-            className="img1"
-            src={headshot}
-            alt=""
-            style={{ height: "500px", width: "400px" }}
-          ></img>
-          <div
-            className="pro-info-text"
-            style={{ width: "600px", height: "500px" }}
-          >
-            <h1 style={{ color: "beige" }}>Professional Bio</h1>
-            <p className="p1">{professionalInfo}</p>
-          </div>
-        </div>
-        <div className="skill-cont">
+      <div className="skill-cont">
         <h1
           style={{
             color: "beige",
@@ -114,6 +79,41 @@ const AboutInfo = () => {
             </ul>
           </div>
         </div>
+        </div>
+      <div className="about-container">
+        <div className="about-info-container">
+          <img 
+            className="img1"
+            src={superDome}
+            alt=""
+            style={{ height: "500px", width: "400px" }}
+          ></img>
+          <div
+            className="about-info-text"
+            style={{
+              width: "600px",
+              height: "500px",
+              border: "black, solid, 1px",
+            }}
+          >
+            <h1 style={{ color: "beige" }}>About Jeff Hauck</h1>
+            <p className="p1">{aboutInfo}</p>
+          </div>
+        </div>
+        <div className="pro-info-container" style={{ marginTop: "10%" }}>
+          <img
+            className="img1"
+            src={headshot}
+            alt=""
+            style={{ height: "500px", width: "400px" }}
+          ></img>
+          <div
+            className="pro-info-text"
+            style={{ width: "600px", height: "500px" }}
+          >
+            <h1 style={{ color: "beige" }}>Professional Bio</h1>
+            <p className="p1">{professionalInfo}</p>
+          </div>
         </div>
       </div>
     </>
