@@ -131,7 +131,7 @@ ul {
 }
 .pro-info-text {
     max-width: 95vw;
-    margin-bottom: 10px;
+    margin-bottom: 200px;
     margin-right: 0;
 }
 
@@ -152,8 +152,9 @@ main {
     padding-bottom: 10%;
 }
 .p1 {
+    height: auto;
     margin-right: 0;
-    margin-bottom: 10px;
+    margin-bottom: 100px;
 }
 .skill-cont {
     margin-top: 100px;

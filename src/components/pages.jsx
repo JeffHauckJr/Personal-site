@@ -1,33 +1,27 @@
-import { Route } from 'react-router-dom';
-import {
-	HOME_ROUTE,
-	ABOUT_ROUTE,
-    PORTFOLIO_ROUTE,
-    CONTACT_ROUTE
-} from '../constants';
-import  Home  from './Home.jsx'
-import AboutInfo from './about';
-import PortfolioInfo from './Portfolio';
-
-
-
+import { Route, Redirect } from "react-router-dom";
+import { HOME_ROUTE, ABOUT_ROUTE, PORTFOLIO_ROUTE } from "../constants";
+import HomeInfo from "./Home.jsx";
+import AboutInfo from "./about";
+import PortfolioInfo from "./Portfolio";
 
 const Pages = () => {
-	return (
-		<>
-			<Route path={HOME_ROUTE}>
-                <Home/>
-			</Route>
-			<Route path={ABOUT_ROUTE}>
-                <AboutInfo/>
-			</Route>
-			<Route path={PORTFOLIO_ROUTE}>
-                <PortfolioInfo/>
-			</Route>
-			<Route path={CONTACT_ROUTE}>
-			</Route>
-		</>
-	);
+  return (
+    <>
+      <Route exact path="/">
+        <Redirect to="/home" />
+      </Route>
+
+      <Route path={HOME_ROUTE}>
+        <HomeInfo />
+      </Route>
+      <Route path={ABOUT_ROUTE}>
+        <AboutInfo />
+      </Route>
+      <Route path={PORTFOLIO_ROUTE}>
+        <PortfolioInfo />
+      </Route>
+    </>
+  );
 };
 
 export default Pages;

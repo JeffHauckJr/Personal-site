@@ -4,7 +4,6 @@ import {
 	HOME_ROUTE,
 	ABOUT_ROUTE,
     PORTFOLIO_ROUTE,
-    CONTACT_ROUTE
 } from "../constants";
 
 const Navigation = () => {

@@ -10,7 +10,7 @@ const PortfolioInfo = () => {
   return (
     <>
       <div>
-        <h1 style={{ color: "beige", fontSize: "50px " }}>Projects</h1>
+        <h1 style={{ color: "beige", fontSize: "50px ", marginBottom: "50px" }}>Projects</h1>
       </div>
       <div className="portfolio-container">
         <div>
