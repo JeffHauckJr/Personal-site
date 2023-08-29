@@ -1,34 +1,44 @@
+/* Apply a reset to remove default margin and padding from all elements */
 * {
-  margin: 0%;
-  padding: 0%;
-}
-.App {
-  text-align: center;
-  height: 100%;
-  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Include border and padding in the element's total width/height */
 }
 
+/* Styling for the main container of the app */
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Set a minimum height to ensure the content stretches the full viewport height */
+  background-color: #282c34; /* Set a background color for the entire app */
+  color: white; /* Set text color for the app */
+}
+
+/* Styling for the spinning logo */
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+  animation: App-logo-spin infinite 20s linear; /* Apply a rotation animation */
 }
 
-
+/* Styling for the app header */
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  flex: 1; /* Allow the header to take up the available vertical space */
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  font-size: calc(10px + 2vmin); /* Responsive font size based on viewport width */
 }
 
+/* Styling for links within the app */
 .App-link {
   color: #61dafb;
 }
 
+/* Keyframes for spinning animation */
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -38,34 +48,23 @@
   }
 }
 
-.footer img {
-  text-align: center;
-  width: 35px;
-  height: 35px;
-  display: inline-block;
-  border: solid;
-  border-radius: 50%;
-  margin-right: 50px;
-  background-color: transparent;
-  color: transparent;
-  margin-left: 20px;
-}
+/* Styling for the footer */
 .footer {
   display: flex;
-  flex-direction: row;
   align-items: center;
-  align-content: center;
   justify-content: center;
   text-align: center;
-  bottom: 0;
   position: fixed;
+  bottom: 0;
   width: 100%;
-  margin-top: 50px;
-}
-.social:link {
-  background-color: transparent;
+  background-color: #282c34; /* Set a background color for the footer */
 }
 
-
-
-
+/* Styling for footer images */
+.footer img {
+  width: 35px;
+  height: 35px;
+  border: solid;
+  border-radius: 50%;
+  margin: 0 20px; /* Adjust margins for better spacing */
+}

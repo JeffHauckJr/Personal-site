@@ -1,34 +1,49 @@
-
-.quote-container {
+/* Apply a reset to remove default margin and padding from all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Include border and padding in the element's total width/height */
+  }
+  
+  /* Styling for the container of the home page */
+  .home-container {
     display: flex;
     flex-direction: column;
-    padding-top: 15%;
-    margin-right: 0%;
-}
-
-img {
-    height: 100px;
-    width: 100px;
-}
-
-.quote-p {
-    font-family: 'Lato', sans-serif;
-    font-size: 30px;
-    color: beige;
-    text-align: center;
-}
-
-.name-container {
-    display: flex;
-    flex-direction: row;
     align-items: center;
-}
-
-.name {
-    font-family: 'Lato', sans-serif;
-    text-align: start;
-    font-weight: 300;
-    margin-left: 25px;
-    color: beige;
-}
-
+    justify-content: center;
+    min-height: 100vh; /* Set a minimum height to ensure the content stretches the full viewport height */
+    background-color: #282c34; /* Set a background color for the home page */
+    color: white; /* Set text color for the home page */
+    padding: 2rem; /* Add some padding to the container */
+  }
+  
+  /* Styling for the name and badge container */
+  .name-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem; /* Add some spacing at the bottom */
+  }
+  
+  .name {
+    font-size: 2rem; /* Increase the font size for the name */
+    margin-bottom: 1rem; /* Add spacing below the name */
+  }
+  
+  /* Styling for the LSU badge image */
+  .name img {
+    width: 100px; /* Set a specific width for the image */
+  }
+  
+  /* Styling for the quote container */
+  .quote-container {
+    text-align: center; /* Center-align the quotes */
+    margin-top: 2rem; /* Add spacing at the top */
+  }
+  
+  .quote-p {
+    font-size: 1.5rem; /* Increase the font size for the quotes */
+    margin-bottom: 0.5rem; /* Add spacing below each quote */
+  }
+  
+  /* Add any additional styles or media queries as needed */

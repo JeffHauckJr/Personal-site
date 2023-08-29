@@ -20,103 +20,59 @@ const AboutInfo = () => {
     `;
 
   return (
-    <>
-      <img className="aboutimg"
-        src={signature}
-        alt=""
-        style={{ width: "300px", marginTop: "10%" }}
-      ></img>
-      <p>Tel: <b>1-602-516-9519</b></p>
-      <p>Email: <b>jefferyhauckjr@gmail.com</b></p>
-      <div className="header-container">
-        <h1 className="about-header">
+    <div className="about-info-container">
+      <img className="aboutimg" src={signature} alt="Signature" />
+      <div className="contact-info">
+        <p>
+          Tel: <b>1-602-516-9519</b>
+        </p>
+        <p>
+          Email: <b>jefferyhauckjr@gmail.com</b>
+        </p>
+      </div>
+      <div className="quote">
+        <h1 className="quote-text">
           “Try not to become a man of success, but rather become a man of
           value.” – Albert Einstein.
         </h1>
       </div>
-      <div className="skill-cont">
-        <h1
-          style={{
-            color: "beige",
-            fontSize: "50px",
-            paddingTop: "15%",
-            paddingBottom: "3%",
-          }}
-        >
-          Technical Skills
-        </h1>
-        <div className="skills-container">
-          <div>
-            <p className="p1" style={{ fontSize: "50px" }}>
-              Languages
-            </p>
-            <ul>
-              <li>JavaScript</li>
-              <li>PostgreSQL</li>
-              <li>SQL</li>
-              <li>HTML5</li>
-              <li>CSS</li>
-            </ul>
-          </div>
-          <div>
-            <p className="p1" style={{ fontSize: "50px" }}>
-              Libraries
-            </p>
-            <ul>
-              <li>React.js</li>
-              <li>jQuery</li>
-              <li>Node.js</li>
-              <li>Express</li>
-            </ul>
-          </div>
-          <div>
-            <p className="p1" style={{ fontSize: "50px" }}>
-              Services
-            </p>
-            <ul>
-              <li>Git</li>
-              <li>Heroku</li>
-            </ul>
-          </div>
+      <div className="skills-container">
+        <div className="skills-group">
+          <p className="p1" style={{ fontSize: "24px" }}>
+            Languages
+          </p>
+          <ul>
+            <li>JavaScript</li>
+            <li>Python</li>
+            {/* Add more languages */}
+          </ul>
         </div>
+        <div className="skills-group">
+          <p className="p1" style={{ fontSize: "24px" }}>
+            Libraries
+          </p>
+          <ul>
+            <li>React.js</li>
+            <li>Node.js</li>
+            {/* Add more libraries */}
+          </ul>
         </div>
-      <div className="about-container">
-        <div className="about-info-container">
-          <img 
-            className="img1"
-            src={superDome}
-            alt=""
-            style={{ height: "500px", width: "400px" }}
-          ></img>
-          <div
-            className="about-info-text"
-            style={{
-              width: "600px",
-              height: "500px",
-              border: "black, solid, 1px",
-            }}
-          >
-            <h1 style={{ color: "beige" }}>About Jeff Hauck</h1>
-            <p className="p1">{aboutInfo}</p>
-          </div>
-        </div>
-        <div className="pro-info-container" style={{ marginTop: "10%" }}>
-          <img
-            className="img1"
-            src={headshot}
-            alt=""
-            style={{ height: "500px", width: "400px" }}
-          ></img>
-          <div
-            className="pro-info-text"
-            style={{ width: "600px", height: "500px" }}
-          >
-            <h1 style={{ color: "beige" }}>Professional Bio</h1>
-            <p className="p1">{professionalInfo}</p>
-          </div>
+        <div className="skills-group">
+          <p className="p1" style={{ fontSize: "24px" }}>
+            Services
+          </p>
+          <ul>
+            <li>Git</li>
+            <li>Heroku</li>
+            {/* Add more services */}
+          </ul>
         </div>
       </div>
-    </>
+      <div className="about-container">
+        <div className="info-section">{aboutInfo}</div>
+        <div className="info-section">{professionalInfo}</div>
+      </div>
+    </div>
   );
 };
 
